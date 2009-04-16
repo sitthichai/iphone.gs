@@ -1,0 +1,133 @@
+/*
+    320 Grid System for iPhone ~ Core CSS
+    Learn more ~ http://homepage.mac.com/digdog/iphone.gs/
+
+
+    Based on
+    
+	960 Grid System ~ Core CSS.
+	Learn more ~ http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/* `Containers
+----------------------------------------------------------------------------------------------------*/
+
+.container_4 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 320px;
+}
+
+/* `Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4 {
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* `Grid >> 4 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_4 .grid_1 {
+	width: 60px;
+}
+
+.container_4 .grid_2 {
+	width: 140px;
+}
+
+.container_4 .grid_3 {
+	width: 220px;
+}
+
+.container_4 .grid_4 {
+	width: 300px;
+}
+
+/* `Prefix Extra Space >> 4 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_4 .prefix_1 {
+	padding-left: 80px;
+}
+
+.container_4 .prefix_2 {
+	padding-left: 160px;
+}
+
+.container_4 .prefix_3 {
+	padding-left: 240px;
+}
+
+/* `Suffix Extra Space >> 4 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_4 .suffix_1 {
+	padding-right: 80px;
+}
+
+.container_4 .suffix_2 {
+	padding-right: 160px;
+}
+
+.container_4 .suffix_3 {
+	padding-right: 240px;
+}
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://www.positioniseverything.net/easyclearing.html */
+
+.clearfix:after {
+	clear: both;
+	content: '.';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
