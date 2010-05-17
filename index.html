@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>digdog / iPhone.gs</title>
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	
+	try {
+		var pageTracker = _gat._getTracker("UA-2112815-2");
+		pageTracker._trackPageview();
+	} catch (err) {}
+	</script>	
+	<link rel="shortcut icon" type="image/png" href="http://homepage.mac.com/digdog/images/favicon.png" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/text.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/320.css" />	
+	<link rel="stylesheet" type="text/css" media="all" href="css/480.css" />	
+	<style type="text/css" media="all">
+	body
+	{
+		margin: 1em;
+		padding: 0;
+		color: #222;
+		font-family: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, Arial, sans-serif;
+		background-image: url(images/GrassBackground.png);
+		background-repeat: repeat;
+		text-align: center;
+	}
+	a {
+		color: #511113;
+		font-weight: bold;
+	}
+	#header {
+        padding-bottom: 1em;
+	}
+	#content, #screenshot, #details {
+		border-left: 1px solid gray;
+		border-right: 1px solid gray;
+	    border-bottom: 1px solid gray;
+		background-color: #e4e3e0;
+		padding-top: 1em;
+	}
+	#content {
+	    border-top: 1px solid gray;
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-top-right-radius: 10px;
+		-moz-border-radius-topleft: 10px;		
+		-moz-border-radius-topright: 10px;		
+		text-align: justify;
+	}
+	#content .alpha p {
+		margin-left: 1em;
+	}
+	#content .omega p {
+		margin-right: 1em;
+	}
+	#screenshot {
+		background-color: #d4d3d0;
+	}
+	#details {
+		padding-top: 1em;
+		-webkit-border-bottom-left-radius: 10px;
+		-webkit-border-bottom-right-radius: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		-moz-border-radius-bottomright: 10px;
+		text-align: justify;
+	}
+	#details p {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+	#download {
+	    display: block;
+	    text-decoration: none;
+		font-weight: normal;
+	    border-top: 2px dotted gray;
+	    border-right: 2px dotted gray;
+	    border-bottom: 2px dotted gray;
+	    color: black;
+	    background-color: #F6C00F;
+		-webkit-border-top-right-radius: 10px;
+		-moz-border-radius-topright: 10px;		
+		-webkit-border-bottom-right-radius: 10px;
+		-moz-border-radius-bottomright: 10px;
+	    padding: 1em;
+	}
+	#footer {
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-top-right-radius: 10px;
+		-moz-border-radius-topleft: 10px;		
+		-moz-border-radius-topright: 10px;		
+		margin-top: 1em;
+		padding: 1em 0 0 0;
+		color: #AAA;
+		background-color: #333;
+	}
+	#footer a {
+		color: #DDD;
+		text-decoration: none;
+		font-weight: normal;
+	}
+	</style>
+</head>
+<body>
+<div class="container_8">
+	<div class="grid_8" id="header">
+        <img src="images/Title.png" alt="iPhone.gs: 320/480 Grid System for iPhone"/>
+	</div>
+	<div class="grid_8" id="content">
+		<div class="grid_3 alpha">
+			<p>I created this for <a href="http://homepage.mac.com/digdog/blackcatclock/">my App</a>'s iPhone-only <a href="http://homepage.mac.com/digdog/blackcatclock/iphone.html">web page</a>. Hope it could streamline your web development workflow on iPhone or other mobile platform.</p>
+			<a href="http://github.com/digdog/iphone.gs/" id="download">Download <b>source</b> from fabulous GitHub.com!</a>
+		</div>
+		<div class="grid_5 omega">
+			<p>Unlike the <a href="http://960.gs">960 Grid System</a>, the iPhone.gs separates css file into two parts: First one, 320.css,
+ is <b>4 columns</b> for iPhone portrait mode (320 pixels width); and the other one, 480.css, is <b>6 or 8 columns</b> for landscape mode 
+(480.css for 480 pixels width). You may simply include them both in the &lt;head&gt; tag, or use any of them that meets your needs.</p> 
+            <p>Optionally, you can also include rest.css and text.css at the beginning to reset 
+browser stylesheet. 
+			</p>
+		</div>
+	</div>
+	<div class="grid_8" id="screenshot">
+		<img src="images/iPhoneLandscape.png" alt="[Screenshot]"/><br/>
+		<p>You can try the <a href="http://homepage.mac.com/digdog/iphone.gs/demo.html">demo</a> page on your iPhone or iPod touch.</p>
+	</div>
+	<div class="grid_8" id="details">
+		<p>The design and layout are basically identical to the 960 Grid System, if you are familiar with it, then iPhone.gs is already at your hands, there's no gap in between. You have the same column width, same prefix and suffix classes, the only difference is the pixel resolution.</p>
+		<p>And since iPhone platform supports 320 x 480 pixel resolution with orientation, I divide the portrait mode into 4 columns, 60px each; and the landscape mode are 6 or 8 columns, 60px or 40px each.</p>
+	</div>
+	<div class="grid_8" id="footer">
+		<p><b>iPhone.gs</b> by <a href="http://homepage.mac.com/digdog/">Ching-Lan 'digdog' Huang</a>. 
+		<br/>Licensed under <a href="http://www.gnu.org/licenses/gpl.html">GPL</a> and <a href="http://www.opensource.org/licenses/mit-license.php">MIT</a>.</p>
+		<p>Inspired from <a href="http://sonspring.com/">Nathan Smith</a>'s <a href="http://960.gs">960 Grid System</a>.</p>
+	</div>
+</div>
+</body>
+</html>
